@@ -14,18 +14,18 @@ const Register = ({ navigation }) => {
     let [password, setPassword] = useState('');
 
     const handleRegister = async () => {
-        
-            const auth = getAuth();
-            console.log(user + " " + password)
-            await createUserWithEmailAndPassword(auth, user, password).then(user =>{
-                navigation.navigate("Home")
-            }
-                
-            ).catch(e => {
-                console.error(e)
-            });
-            console.log("Inregistrare creata cu succes");
-        
+
+        const auth = getAuth();
+        console.log(user + " " + password)
+        await createUserWithEmailAndPassword(auth, user, password).then(user => {
+            navigation.navigate("Home")
+        }
+
+        ).catch(e => {
+            console.error(e)
+        });
+        console.log("Inregistrare creata cu succes");
+
     }
 
     const handleDateChange = (selectedDate) => {

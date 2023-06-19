@@ -28,6 +28,7 @@ const Home = ({ navigation }) => {
                     borderWidth: 2,
                     borderColor: '#ccc'
                     }} 
+                    activeOpacity={1}
                   onPress={() => navigation.navigate('Login')}>
                 <Text style={{color: 'white', fontSize: 30, textAlign: 'center'}}>LOGIN</Text>
               </TouchableOpacity>
